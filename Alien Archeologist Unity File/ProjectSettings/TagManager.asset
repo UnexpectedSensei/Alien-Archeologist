@@ -50,3 +50,6 @@ TagManager:
   - name: Character
     uniqueID: 1988831027
     locked: 0
+  - name: Buttons
+    uniqueID: 1274125091
+    locked: 0
