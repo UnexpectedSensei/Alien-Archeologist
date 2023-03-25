@@ -1116,7 +1116,6 @@ GameObject:
   - component: {fileID: 872346835}
   - component: {fileID: 872346834}
   - component: {fileID: 872346833}
-  - component: {fileID: 872346832}
   - component: {fileID: 872346831}
   m_Layer: 5
   m_Name: RightButton
@@ -1158,19 +1157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc238cd4d4409e64e8307693b172dddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &872346832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872346829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 584d3812b6f8dda438be3c2977da7a39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!50 &872346833
 Rigidbody2D:
   serializedVersion: 4
@@ -1236,7 +1222,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 872346832}
+      - m_Target: {fileID: 1703566632}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: MoveRight
         m_Mode: 1
@@ -2925,6 +2911,7 @@ GameObject:
   - component: {fileID: 1703566627}
   - component: {fileID: 1703566631}
   - component: {fileID: 1703566630}
+  - component: {fileID: 1703566632}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -3036,6 +3023,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1703566632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703566626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 584d3812b6f8dda438be3c2977da7a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &1753466725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,7 +3049,6 @@ GameObject:
   - component: {fileID: 1753466731}
   - component: {fileID: 1753466730}
   - component: {fileID: 1753466729}
-  - component: {fileID: 1753466728}
   - component: {fileID: 1753466727}
   m_Layer: 5
   m_Name: LeftButton
@@ -3091,19 +3090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc238cd4d4409e64e8307693b172dddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1753466728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753466725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 584d3812b6f8dda438be3c2977da7a39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!50 &1753466729
 Rigidbody2D:
   serializedVersion: 4
@@ -3169,7 +3155,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1753466728}
+      - m_Target: {fileID: 1703566632}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: MoveLeft
         m_Mode: 1
