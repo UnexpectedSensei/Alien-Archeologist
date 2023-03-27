@@ -7,9 +7,11 @@ public class PlayerMovement : MonoBehaviour
 {
     //Speed setting, in meters/second
     public float speed = 1;
-    //Reference variable to use RigidBody
-    //Set to null by default, meaning we DON'T have a reference yet.
+    //Jump speed setting, in meters/second
+    public float jumpSpeed = 10;
     private Rigidbody2D physicsBody = null;
+    public Collider2D groundSensor = null;
+    public LayerMask groundLayer = 0;
 
     private void Awake()
     {
@@ -37,4 +39,20 @@ public class PlayerMovement : MonoBehaviour
         //update our physics component's velocity to be our newly changed value
         physicsBody.velocity = newVelocity;
     }
+
+    public void Jump()
+    
+    {
+        if (groundSensor.IsTouchingLayers(groundLayer))
+        {
+            //Make a variable to hold our velocity and get the
+            //Current velocity from the physics component
+            Vector2 newVelocity = physicsBody.velocity;
+            //Set our velocity to move in the positive y (up) direction
+            newVelocity.y = jumpSpeed;
+            //Update our physics component's velocity to be our newly changed value
+            physicsBody.velocity = newVelocity;
+        }
+    }
+            
 }
