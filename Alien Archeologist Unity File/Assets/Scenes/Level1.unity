@@ -3470,7 +3470,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3488,8 +3488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 584d3812b6f8dda438be3c2977da7a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  jumpSpeed: 10
+  speed: 4
+  jumpSpeed: 25
   groundSensor: {fileID: 1228641701}
   groundLayer:
     serializedVersion: 2
