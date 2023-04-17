@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - UI
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 1902360471
+    locked: 0
+  - name: UI
+    uniqueID: 3317495119
     locked: 0
