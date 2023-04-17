@@ -8,9 +8,10 @@ public class LevelPortal : MonoBehaviour
     //public variables editable in Unity
     public string targetScene = "";
 
+    // CONDITION
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        ChangeScene();
     }
 
     public void ChangeScene()
